@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_screen"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bank_logo"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="250dp"
+        android:src="@drawable/bank"/>
+
+    <TextView
+        android:id="@+id/bank_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:fontFamily="cursive"
+        android:text="Banking System"
+        android:textAlignment="viewStart"
+        android:textColor="#045c94"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/all_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/btnshape"
+        android:onClick="showAllUsers"
+        android:textSize="16sp"
+        android:text="Users"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/all_transactions"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btnshape"
+        android:text="transactions"
+        android:textStyle="bold"
+        android:onClick="showAllTransactions"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
